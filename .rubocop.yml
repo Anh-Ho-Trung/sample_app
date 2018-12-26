@@ -19,6 +19,7 @@ AllCops:
     - 'spec/**/*'
     - 'script/rails'
     - 'config/**/*'
+    - 'Guardfile'
 
 # Indent private/protected/public as deep as method definitions
 Layout/AccessModifierIndentation:
@@ -224,6 +225,9 @@ Naming/FileName:
     - '**/Rakefile'
     - '**/Gemfile'
     - '**/Capfile'
+
+Style/Tab:
+  Enabled: false
 
 # Checks use of for or each in multiline loops.
 Style/For:
