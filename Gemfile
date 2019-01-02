@@ -6,8 +6,10 @@ ruby "2.5.3"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "coffee-rails", "~> 4.2"
 gem "jbuilder", "~> 2.5"
+gem "minitest-reporters"
 gem "puma", "~> 3.11"
 gem "rails", "~> 5.2.2"
+gem "rails-i18n"
 gem "rubocop", "~> 0.54.0", require: false
 gem "sass-rails", "~> 5.0"
 gem "sqlite3"
@@ -25,6 +27,12 @@ end
 group :test do
   gem "capybara", ">= 2.15"
   gem "chromedriver-helper"
+  gem "guard", "2.13.0"
+  gem "guard-minitest", "2.4.4"
   gem "selenium-webdriver"
+end
+
+group :production do
+  gem "pg", "0.18.4"
 end
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
