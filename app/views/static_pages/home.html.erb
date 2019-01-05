@@ -1,5 +1,12 @@
-<% provide:title, t(".title") %>
-<h1><%= t(".samapp") %></h1>
+<% provide:title,t(".title") %>
+<!-- <h1><%= t(".title") %></h1>
 <p>
   <%= raw t(".content") %>
 </p>
+ -->
+<div class="center jumbotron">
+  <%= raw t(".content") %>
+  <%= link_to t(".sinupnow"), signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+<%= raw t(".logorails") %>
+<!-- <img alt="Rails logo" src="assets/kitten.jpg" /> -->

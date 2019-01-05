@@ -37,8 +37,16 @@ en:
     home:
       title: "Home"
       samapp: "Sample App"
-      content: "This is the home page for the <a href='http://www.railstutorial.org/'>
-      Ruby on Rails Tutorial</a> sample application."
+      content: "<h1>Welcome to the Sample App</h1>
+        <h2>
+          This is the home page for the
+          <a href='http://www.railstutorial.org/'>Ruby on Rails Tutorial</a>
+          sample application.
+        </h2>"
+      logorails: "<a href='http://rubyonrails.org/'>
+        <img alt='Rails logo'src='assets/rails.png' />
+        </a>"
+      sinupnow: "Sign up now!"
     help:
       title: "Help"
       content: "Get help on the Ruby on Rails Tutorial at the
@@ -65,5 +73,13 @@ en:
       content: "Find me in app/views/static_pages/....html.erb"
 
   layouts:
-    application:
-      title: "| Ruby on Rails Tutorial Sample App"
+    _footer:
+      about: "About"
+      contact: "Contact"
+      content: "<a href='http://news.railstutorial.org/'>News</a>"
+      small: " The <a href='http://www.railstutorial.org/'>Ruby on Rails Tutorial</a>
+        by <a href='http://www.michaelhartl.com/'>Michael Hartl</a>"
+    _header:
+      home: "Home"
+      help: "Help"
+      login: "Log in"
