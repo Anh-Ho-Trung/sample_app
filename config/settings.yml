@@ -4,3 +4,6 @@ app:
       maximum1: 50
       maximum2: 255
       minimum1: 6
+  helpers:
+    users_helper:
+      size: 80 
