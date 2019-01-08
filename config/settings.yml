@@ -1,0 +1,6 @@
+app:
+  models:
+    user:
+      maximum1: 50
+      maximum2: 255
+      minimum1: 6
