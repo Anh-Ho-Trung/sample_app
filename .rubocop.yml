@@ -226,8 +226,8 @@ Naming/FileName:
     - '**/Gemfile'
     - '**/Capfile'
 
-Style/Tab:
-  Enabled: false
+# Style/Tab:
+#   Enabled: false
 
 # Checks use of for or each in multiline loops.
 Style/For:
@@ -550,3 +550,6 @@ Rails/ScopeArgs:
 Rails/Validation:
   Include:
     - app/models/**/*.rb
+
+# Style/AlignHash:
+#   Enabled: false

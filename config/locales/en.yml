@@ -83,3 +83,18 @@ en:
       home: "Home"
       help: "Help"
       login: "Log in"
+  #app-controllers-user_controller    
+  users: 
+    create:
+      message: "Welcome to the Sample App!"
+    show:
+      message_not_found: "user was not found!"  
+    new:
+      title: "Sign up"
+      new_account: "Create my account"
+      confirmation: "Confirmation"
+  shared:
+    error_messages:
+      content:
+        one: " The form contains %{count} error." 
+        other: " The form contains %{count} errors."    
