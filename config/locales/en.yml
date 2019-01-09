@@ -83,6 +83,12 @@ en:
       home: "Home"
       help: "Help"
       login: "Log in"
+      users: "Users"
+      profile: "Profile"
+      account: "Account"
+      settings: "Settings"
+      logout: "Log out"
+      login: "Log in"
   #app-controllers-user_controller    
   users: 
     create:
@@ -93,6 +99,16 @@ en:
       title: "Sign up"
       new_account: "Create my account"
       confirmation: "Confirmation"
+  sessions:
+    create:
+      message_error: "Invalid email/password combination"
+    new:
+      title: "Log in" 
+      login:
+        title: "Log in" 
+      login: "Log in" 
+      new_user: "New user?"
+      sinupnow: "Sign up now!"
   shared:
     error_messages:
       content:
