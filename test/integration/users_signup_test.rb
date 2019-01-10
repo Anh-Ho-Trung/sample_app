@@ -1,4 +1,3 @@
-
 require "test_helper"
 
 class UsersSignupTest < ActionDispatch::IntegrationTest
@@ -23,8 +22,9 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
                                        password: "password",
                                        password_confirmation: "password"}}
     end
-    # follow_redirect!
-    # assert_template "users/show"
+    follow_redirect!
+    assert_template "users/show"
     # assert_not flash.FILL_IN
+    assert is_logged_in?
   end
 end
