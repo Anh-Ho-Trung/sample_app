@@ -107,6 +107,7 @@ en:
       login:
         title: "Log in" 
       login: "Log in" 
+      remember_me: "Remember me on this computer"
       new_user: "New user?"
       sinupnow: "Sign up now!"
   shared:

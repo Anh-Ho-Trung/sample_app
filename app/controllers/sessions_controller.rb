@@ -5,7 +5,8 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:session][:email].downcase)
     if user &.authenticate(params[:session][:password])
       log_in user
-      redirect_to user
+      check_rememember user
+      redirect_back_or user
     else
       flash.now[:danger] = t ".message_error"
       render :new
@@ -13,7 +14,12 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    log_out
+    log_out if logged_in?
     redirect_to root_url
+  end
+
+  private
+  def check_rememember user
+    params[:session][:remember_me] == Settings.remember_user ? remember(user) : forget(user)
   end
 end

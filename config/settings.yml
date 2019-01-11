@@ -6,4 +6,5 @@ app:
       minimum1: 6
   helpers:
     users_helper:
-      size: 80 
+      size: 80
+remember_user: "1"
