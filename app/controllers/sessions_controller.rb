@@ -20,6 +20,6 @@ class SessionsController < ApplicationController
 
   private
   def check_rememember user
-    params[:session][:remember_me] == Settings.remember_user ? remember(user) : forget(user)
+    params[:session][:remember_me] == Settings.remember_me ? remember(user) : forget(user)
   end
 end
