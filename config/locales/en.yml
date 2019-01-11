@@ -30,9 +30,6 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  helpers:
-    application_helper:
-      base_title: "Ruby on Rails Tutorial Sample App"
   static_pages:
     home:
       title: "Home"
@@ -89,29 +86,56 @@ en:
       settings: "Settings"
       logout: "Log out"
       login: "Log in"
-  #app-controllers-user_controller    
-  users: 
+  #app-controllers-user_controller
+  users:
+    update:
+      profile_updated: "Profile updated"
+    destroy:
+      user_deleted: "User deleted"
     create:
       message: "Welcome to the Sample App!"
     show:
-      message_not_found: "user was not found!"  
+      message_not_found: "user was not found!"
     new:
       title: "Sign up"
       new_account: "Create my account"
       confirmation: "Confirmation"
+    _user:
+      you_sure: "You sure?"
+    edit:
+      edit_user: "Edit user"
+      content: "Update your profile"
+      save_changes: "Save changes"
+      change: "change"
+    index:
+       title: "All users"
+       please_log_in: "Please log in."
   sessions:
     create:
       message_error: "Invalid email/password combination"
     new:
-      title: "Log in" 
+      title: "Log in"
       login:
-        title: "Log in" 
-      login: "Log in" 
+        title: "Log in"
+      login: "Log in"
       remember_me: "Remember me on this computer"
       new_user: "New user?"
       sinupnow: "Sign up now!"
   shared:
     error_messages:
       content:
-        one: " The form contains %{count} error." 
-        other: " The form contains %{count} errors."    
+        one: " The form contains %{count} error."
+        other: " The form contains %{count} errors."
+  helpers:
+    application_helper:
+      base_title: "Ruby on Rails Tutorial Sample App"
+    label:
+      user: #model
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Confirmation"
+      session:
+        email: "Email"
+        password: "Password"
+
