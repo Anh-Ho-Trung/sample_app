@@ -119,8 +119,13 @@ en:
     new:
       title: "Log in"
       login:
+<<<<<<< HEAD
         title: "Log in"
       login: "Log in"
+=======
+        title: "Log in" 
+      login: "Log in" 
+>>>>>>> chapter9
       remember_me: "Remember me on this computer"
       new_user: "New user?"
       sinupnow: "Sign up now!"
