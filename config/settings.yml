@@ -7,4 +7,7 @@ app:
   helpers:
     users_helper:
       size: 80
-remember_user: "1"
+size: 80
+remember_me: "1"
+uers:
+  _user: 50
